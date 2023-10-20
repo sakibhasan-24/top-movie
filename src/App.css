@@ -85,7 +85,7 @@ body {
   gap: 6rem;
 }
 main {
-  width: 1200px;
+  width: 1300px;
   margin: 10rem auto;
 }
 .movies {
@@ -95,10 +95,13 @@ main {
 }
 .movie {
   cursor: pointer;
-  background-color: rgb(129, 109, 109);
+  background-color: rgb(146, 159, 223);
   border-radius: 20px;
   padding: 1rem 2rem;
   transition: transform 0.9s;
+}
+.thriller {
+  background-color: #153482;
 }
 .movie:hover {
   transform: scale(0.9);
@@ -129,4 +132,12 @@ main {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+.rating {
+  font-size: 2rem;
+  /* color: rgb(22, 8, 2); */
+  color: #dac6c6;
+}
+.rating span {
+  font-size: 4rem;
 }

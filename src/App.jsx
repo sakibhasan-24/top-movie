@@ -12,6 +12,7 @@ const movieList = [
     description:
       "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
     isOscar: true,
+    category: "thriller",
   },
   {
     id: 2,
@@ -36,6 +37,7 @@ const movieList = [
     description:
       "When the Joker wreaks havoc on Gotham City, the caped crusader must confront one of his greatest psychological and physical tests.",
     isOscar: true,
+    category: "thriller",
   },
   {
     id: 4,
@@ -72,6 +74,7 @@ const movieList = [
     description:
       "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
     isOscar: true,
+    category: "thriller",
   },
   {
     id: 7,
@@ -96,6 +99,7 @@ const movieList = [
     description:
       "A computer hacker discovers a dystopian world ruled by machines and joins a rebellion to break free from the simulated reality known as the Matrix.",
     isOscar: false,
+    category: "thriller",
   },
   {
     id: 9,
@@ -132,6 +136,7 @@ const movieList = [
     description:
       "The story of the creation and rise of Facebook, as well as the legal battles that followed its success.",
     isOscar: true,
+    category: "thriller",
   },
   {
     id: 12,
@@ -175,8 +180,13 @@ function Header() {
   );
 }
 function Movie(props) {
+  // movie thriller
   return (
-    <div className="movie">
+    <div
+      className={`movie ${
+        props.movie.category === "thriller" ? "thriller" : ""
+      }`}
+    >
       <div className="img-container">
         <img src={props.movie.pictureUrl} alt="images" />
       </div>
@@ -184,7 +194,9 @@ function Movie(props) {
         <h1 className="movie-name">{props.movie.movieName}</h1>
         <h3 className="title">{props.movie.title}</h3>
         <p className="description">{props.movie.description}</p>
-        <h1 className="rating">{props.movie.imdbRating}</h1>
+        <h1 className="rating">
+          IMDB: <span>{props.movie.imdbRating}</span>
+        </h1>
       </div>
     </div>
   );
