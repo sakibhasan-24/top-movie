@@ -192,6 +192,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
   .movie {
-    width: 90%;
+    width: 70%;
   }
 }
