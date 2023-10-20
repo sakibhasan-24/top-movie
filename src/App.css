@@ -142,59 +142,54 @@ main {
 .rating span {
   font-size: 4rem;
 }
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 576px) {
   .header {
+    padding: 0;
     width: 100%;
+    margin: 1rem auto;
   }
   .nav {
     flex-direction: column;
   }
+  .nav li:hover {
+    background-color: purple;
+    border-radius: 20px;
+    padding: 1rem 1.2rem;
+    filter: none;
+    transition: all 0.9s;
+  }
   .type-nav {
     flex-direction: column;
   }
-  .nav li:hover {
-    background-color: purple;
-    padding: 1rem 2.3rem;
-    border-radius: 20px;
-    transition: all 0.9s;
-  }
   main {
-    width: 550px;
-    margin: 2rem auto;
+    width: 300px;
+    margin: 4rem auto;
   }
+
   .movies {
     grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
   }
   .movie {
     width: 90%;
+    margin: 0;
   }
 }
-@media screen and (max-width: 900px) and (min-width: 677px) {
+@media screen and (max-width: 800px) and (min-width: 577px) {
+  .header {
+    width: 100%;
+    padding: 0;
+  }
   .nav {
     flex-direction: column;
   }
   main {
     width: 650px;
-    margin: 3rem auto;
-  }
-  .movies {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-  }
-  .movie {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 1299px) and (min-width: 901px) {
-  main {
-    width: 850px;
-    width: 2rem auto;
   }
   .movies {
     grid-template-columns: repeat(2, 1fr);
+    gap: 7rem;
   }
   .movie {
-    width: 70%;
+    width: 100%;
   }
 }
