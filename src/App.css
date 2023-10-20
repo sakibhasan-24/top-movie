@@ -143,6 +143,9 @@ main {
   font-size: 4rem;
 }
 @media screen and (max-width: 676px) {
+  .header {
+    width: 100%;
+  }
   .nav {
     flex-direction: column;
   }
