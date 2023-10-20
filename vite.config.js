@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Top-movie/",
+  base: "/top-movie/",
   plugins: [react()],
 });
