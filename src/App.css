@@ -84,6 +84,46 @@ body {
   justify-content: space-evenly;
   gap: 6rem;
 }
+.progress {
+  background-color: #5f80d3;
+  padding: 2rem 5rem;
+  width: 50%;
+  margin: 2rem auto;
+  border-radius: 20px;
+}
+.numbers {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  font-size: 3rem;
+  color: #fff;
+}
+.numbers div {
+  background-color: #01162d;
+  border-radius: 50%;
+  padding: 3rem 4rem;
+  cursor: pointer;
+}
+.learning {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn button {
+  cursor: pointer;
+  padding: 1rem 4rem;
+  border-radius: 20px;
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+}
 main {
   width: 1200px;
   margin: 10rem auto;

@@ -156,6 +156,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Progress />
       <Movies />
       <Footer />
     </div>
@@ -163,6 +164,27 @@ function App() {
 }
 
 export default App;
+
+function Progress() {
+  return (
+    <section className="progress">
+      <div className="numbers">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div className="learning">
+        <h2>step : LOg in</h2>
+      </div>
+      <div className="btn">
+        <button style={{ backgroundColor: "purple" }}>Prev</button>
+        <button style={{ backgroundColor: "purple", color: "#000" }}>
+          Next
+        </button>
+      </div>
+    </section>
+  );
+}
 
 function Header() {
   return (
@@ -230,3 +252,13 @@ function Footer() {
     </footer>
   );
 }
+
+/* 
+
+what is our goal
+how to watch-> title
+step 1 log in
+step 2 select category
+step three pay
+
+*/
