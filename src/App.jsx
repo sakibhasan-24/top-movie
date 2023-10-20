@@ -157,6 +157,7 @@ function App() {
     <div>
       <Header />
       <Movies />
+      <Footer />
     </div>
   );
 }
@@ -213,4 +214,19 @@ function Movies() {
     </main>
   );
 }
-function Footer() {}
+function Footer() {
+  const date = new Date();
+  const footerStyle = {
+    textAlign: "center",
+    fontSize: "4rem",
+    color: "#fff",
+    letterSpacing: ".9rem",
+  };
+  return (
+    <footer className="footer">
+      <h3 style={footerStyle}>
+        last updated <span>{date.getFullYear()}</span>
+      </h3>
+    </footer>
+  );
+}
