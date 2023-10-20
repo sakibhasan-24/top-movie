@@ -101,8 +101,9 @@ main {
   transition: transform 0.9s;
 }
 .thriller {
-  background-color: #153482;
+  background-color: #5f80d3;
 }
+
 .movie:hover {
   transform: scale(0.9);
 }
@@ -140,4 +141,39 @@ main {
 }
 .rating span {
   font-size: 4rem;
+}
+
+@media screen and (max-width: 676px) {
+  .header {
+    padding: 1rem;
+  }
+  .nav {
+    font-size: 2rem;
+    flex-direction: column;
+  }
+  .type-nav {
+    flex-direction: column;
+  }
+
+  nav li:hover {
+    background-color: purple;
+    padding: 2rem 15rem;
+    border-radius: 20px;
+    transition: padding 0.9s;
+  }
+  main {
+    width: 500px;
+    margin: 7rem auto;
+  }
+  .movies {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+  .movie {
+    width: 90%;
+  }
+  .rating {
+    text-align: center;
+    color: rgba(78, 17, 218, 0.687);
+  }
 }
