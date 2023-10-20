@@ -142,38 +142,56 @@ main {
 .rating span {
   font-size: 4rem;
 }
-
 @media screen and (max-width: 676px) {
-  .header {
-    padding: 1rem;
-  }
   .nav {
-    font-size: 2rem;
     flex-direction: column;
   }
   .type-nav {
     flex-direction: column;
   }
-
-  nav li:hover {
+  .nav li:hover {
     background-color: purple;
-    padding: 2rem 15rem;
+    padding: 1rem 2.3rem;
     border-radius: 20px;
-    transition: padding 0.9s;
+    transition: all 0.9s;
   }
   main {
-    width: 500px;
-    margin: 7rem auto;
+    width: 550px;
+    margin: 2rem auto;
   }
   .movies {
     grid-template-columns: repeat(1, 1fr);
-    gap: 5rem;
+    gap: 2rem;
   }
   .movie {
     width: 90%;
   }
-  .rating {
-    text-align: center;
-    color: rgba(78, 17, 218, 0.687);
+}
+@media screen and (max-width: 900px) and (min-width: 677px) {
+  .nav {
+    flex-direction: column;
+  }
+  main {
+    width: 650px;
+    margin: 3rem auto;
+  }
+  .movies {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .movie {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1299px) and (min-width: 901px) {
+  main {
+    width: 850px;
+    width: 2rem auto;
+  }
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .movie {
+    width: 90%;
   }
 }
