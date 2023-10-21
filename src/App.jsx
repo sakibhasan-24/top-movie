@@ -170,22 +170,37 @@ export default App;
 function Progress() {
   // const steps = 1;
   const [step, setStep] = useState(0);
+  const [text, setText] = useState("click Next");
+
   const handleNext = () => {
+    // console.log(step);
     //if greater than two then stop it in two
+    // suppose step is 0 ,0 is less than 2 .it is true ,so increase step.it will be 1
     if (step < 2) {
+      if (step === 0) setText("logged");
+      if (step === 1) setText("done");
       setStep(step + 1);
     }
   };
   const handlePrev = () => {
+    console.log(step);
+    if (step === 1) {
+      setText("click next");
+    }
+
+    if (step === 2) {
+      setText("logged");
+    }
     if (step === 0) {
       setStep(0);
     } else {
       setStep(step - 1);
     }
   };
+
   return (
     <section className="progress">
-      <h2>follow instruction</h2>
+      <h2>{text}</h2>
       <div className="numbers">
         <div className={`${step >= 0 ? "active" : ""}`}>1</div>
         <div className={`${step >= 1 ? "active" : ""}`}>2</div>
