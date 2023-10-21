@@ -91,6 +91,10 @@ body {
   margin: 2rem auto;
   border-radius: 20px;
 }
+.progress h2 {
+  font-size: 2.4rem;
+  text-align: center;
+}
 .numbers {
   margin-top: 4rem;
   display: flex;
@@ -100,16 +104,25 @@ body {
   font-size: 3rem;
   color: #fff;
 }
+.active {
+  background-color: #225c96;
+  transition: all 0.9s;
+}
 .numbers div {
-  background-color: #01162d;
+  border: 5px solid gray;
+  /* background-color: #5f80d3; */
   border-radius: 50%;
   padding: 3rem 4rem;
   cursor: pointer;
 }
+
 .learning {
   text-align: center;
   color: #fff;
   font-size: 2.5rem;
+}
+.learning h2 {
+  transition: all 2s;
 }
 .btn {
   display: flex;
@@ -123,6 +136,10 @@ body {
   border: 0;
   color: #fff;
   font-size: 2rem;
+  transition: all 0.9s;
+}
+.btn button:active {
+  transform: scale(0.9);
 }
 main {
   width: 1200px;

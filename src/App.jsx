@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./App.css";
 
+const learningList = ["Sign In", "Select Category", "Click Play"];
 const movieList = [
   {
     id: 1,
@@ -166,19 +168,40 @@ function App() {
 export default App;
 
 function Progress() {
+  // const steps = 1;
+  const [step, setStep] = useState(0);
+  const handleNext = () => {
+    //if greater than two then stop it in two
+    if (step < 2) {
+      setStep(step + 1);
+    }
+  };
+  const handlePrev = () => {
+    if (step === 0) {
+      setStep(0);
+    } else {
+      setStep(step - 1);
+    }
+  };
   return (
     <section className="progress">
+      <h2>follow instruction</h2>
       <div className="numbers">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <div className={`${step >= 0 ? "active" : ""}`}>1</div>
+        <div className={`${step >= 1 ? "active" : ""}`}>2</div>
+        <div className={`${step >= 2 ? "active" : ""}`}>3</div>
       </div>
       <div className="learning">
-        <h2>step : LOg in</h2>
+        <h2>{`steps ${step + 1} is : ${learningList[step]}`}</h2>
       </div>
       <div className="btn">
-        <button style={{ backgroundColor: "purple" }}>Prev</button>
-        <button style={{ backgroundColor: "purple", color: "#000" }}>
+        <button onClick={handlePrev} style={{ backgroundColor: "purple" }}>
+          Prev
+        </button>
+        <button
+          onClick={handleNext}
+          style={{ backgroundColor: "purple", color: "#000" }}
+        >
           Next
         </button>
       </div>
