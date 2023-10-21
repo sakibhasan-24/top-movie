@@ -199,7 +199,7 @@ main {
 .rating span {
   font-size: 4rem;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 676px) {
   .header {
     padding: 0;
     width: 100%;
@@ -218,6 +218,12 @@ main {
   .type-nav {
     flex-direction: column;
   }
+  .progress {
+    width: 30rem;
+  }
+  .numbers {
+    gap: 3rem;
+  }
   main {
     width: 300px;
     margin: 4rem auto;
@@ -231,13 +237,16 @@ main {
     margin: 0;
   }
 }
-@media screen and (max-width: 800px) and (min-width: 577px) {
+@media screen and (max-width: 800px) and (min-width: 677px) {
   .header {
     width: 100%;
     padding: 0;
   }
   .nav {
     flex-direction: column;
+  }
+  .progress {
+    width: 35rem;
   }
   main {
     width: 650px;
@@ -247,7 +256,7 @@ main {
     gap: 7rem;
   }
   .movie {
-    width: 100%;
+    width: 80%;
   }
 }
 
