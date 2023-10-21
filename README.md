@@ -1,8 +1,17 @@
-# React + Vite
+# React + (JSX,COMPONENT,RENDERING DATA,CONDITIONAL,STATE,SETSTATE,USESTATE)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This projects i am try to cover very basic topic of REACT
 
-Currently, two official plugins are available:
+# JSX(how jsx work)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# COMPONENT(BREAK DOWN CODE)
+
+# RENDERING DATA(from data how to create new component,accept props)
+
+# CONDITIONAL(based on condition add class)
+
+# STATE(update,if update needed how to remember previous data)
+
+# SETSTATE(how it is work)
+
+# Project link https://sakibhasan-24.github.io/top-movie/
